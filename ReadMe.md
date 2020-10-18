@@ -1,6 +1,6 @@
-#Retinal Blood Vessels Mini Project
+# Retinal Blood Vessels Mini Project
 
-##Hypothesis
+## Hypothesis
 
-##Resources: 
+## Resources: 
 1. Digital Image Processing for Medical Applications : Pg 389-390 Tortuosity
