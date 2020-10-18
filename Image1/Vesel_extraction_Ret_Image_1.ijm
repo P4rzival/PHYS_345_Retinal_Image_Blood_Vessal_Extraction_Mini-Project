@@ -1,0 +1,12 @@
+open("E:/Fall2020/phys345/PHYS345Mini-Project/Retinal_image_1.tif");
+run("Enhance Contrast...", "saturated=0");
+run("Duplicate...", " ");
+run("Mean...", "radius=90");
+saveAs("Tiff", "E:/Fall2020/phys345/PHYS345Mini-Project/Retinal_image_Background.tif");
+selectWindow("Retinal_image_1.tif");
+imageCalculator("Subtract create", "Retinal_image_1.tif","Retinal_image_Background.tif");
+selectWindow("Result of Retinal_image_1.tif");
+run("8-bit");
+setAutoThreshold("Default dark");
+//run("Threshold...");
+setThreshold(2, 12);
