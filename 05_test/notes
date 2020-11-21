@@ -1,0 +1,2 @@
+Notes: The lower the test level seems to be less and less noisey products after the background subtraction and contrast adjustment. I wonder if this is the intentional trend, or I this speaks to a more liberal mean filter radius. Again including a smoothing kernel.
+

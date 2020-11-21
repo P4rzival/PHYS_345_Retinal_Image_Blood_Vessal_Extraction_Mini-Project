@@ -1,0 +1,2 @@
+Notes: On this run I escalated the radius when taking the mean from 25-30 to 40. The contrast seemed to produce a less noisey result. Not certain that this is related, but it is at least a coincidence. I will include a copy with a smoothing kernel for consistency.
+
