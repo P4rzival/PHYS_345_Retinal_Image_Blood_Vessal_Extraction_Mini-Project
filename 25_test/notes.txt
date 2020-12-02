@@ -1,1 +1,0 @@
-Notes: Similarly this photo also collected a lot of noise following subtraction and contrast adjustment. Will perform smoothing as well in this instance.
