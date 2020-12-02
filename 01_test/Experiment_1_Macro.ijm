@@ -1,3 +1,6 @@
+//Notes: This is a very clean result. I believe the lower numbered test photos are the intentions of the professor to see our ability to clean noise from a photo. Unfortunately this has been very illusive without losing a lot of quality in the veins. This observation closely echoes what is written in the textbook about smoothing retinal photos.
+
+
 open(File.openDialog("Choose Image to Process with Experiment 1"));
 run("Duplicate...", " ");
 
@@ -34,4 +37,6 @@ run("Convolve...", "text1=[1 1 1\n1 9 1\n1 1 1\n] normalize");
 run("Apply LUT");
 //run("Close");
 saveAs("Tiff", saveLoc + "ResultOfBackgroundSubtraction-ConvolvedWithSmoothingKernel.tif");
+Dialog.create("Finished");
+Dialog.addMessage("Done!");
 //close();
