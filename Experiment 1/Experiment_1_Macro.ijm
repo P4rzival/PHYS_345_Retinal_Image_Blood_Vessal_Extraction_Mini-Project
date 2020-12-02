@@ -1,7 +1,7 @@
 //Notes: This is a very clean result. I believe the lower numbered test photos are the intentions of the professor to see our ability to clean noise from a photo. Unfortunately this has been very illusive without losing a lot of quality in the veins. This observation closely echoes what is written in the textbook about smoothing retinal photos.
 
 
-open(File.openDialog("Choose Image to Process with Experiment 2"));
+open(File.openDialog("Choose Image to Process with Experiment 1"));
 run("Duplicate...", " ");
 
 //Dialog.create("Select Original Image to Delete");
@@ -33,10 +33,14 @@ run("Apply LUT");
 saveAs("Tiff", saveLoc + "ResultOfBackgroundSubtraction.tiff");
 run("Duplicate...", " ");
 run("Convolve...", "text1=[1 1 1\n1 9 1\n1 1 1\n] normalize");
-//run("Brightness/Contrast...");
+
+// For some reason I cannot automatically adjust the contrast using macros so the user will adjust it to get the desired result
+
+run("Brightness/Contrast...");
 run("Apply LUT");
 //run("Close");
 saveAs("Tiff", saveLoc + "ResultOfBackgroundSubtraction-ConvolvedWithSmoothingKernel.tiff");
 Dialog.create("Finished");
-Dialog.addMessage("Done!");
+Dialog.addMessage("Done! Just adjust the "Maximum" slider until the the vessels are seen clearly and make sure to save!");
+Dialog.show();
 //close();

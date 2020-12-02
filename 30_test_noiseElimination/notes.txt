@@ -1,6 +1,6 @@
 Notes:
 
-The original photo has some sort of glair around the periphery. This is very noticeable in the lower left of the photo and can be seen slightly throughout the rest of the edge. 
+The original photo has some sort of glare around the periphery. This is very noticeable in the lower left of the photo and can be seen slightly throughout the rest of the edge. 
 
 After changing types to 8-bit, this glared portion is obviously lossy on data. Veins are not clear and the finer details that are constant throughout the retinal photo are missing in the lower left portion.
 
